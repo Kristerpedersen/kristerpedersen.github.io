@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Grenze+Gotisch:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>The Obnoxious Helmet</title>
+</head>
+<body>
+
+    <header>
+        <div class="container container-flex">
+            <div class="tavern-title">
+                    <h1>The Obnoxious Helmet</h1>
+                <p class="subtitle"> For every adventurer</p>
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="current-page" href="#">Menu</a></li>
+                    <li><a href="our-staff.html">Our Staff</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <main  role="main">
+            <div class="menu-tab">
+                <button class="tab-button" onclick="openMenu(event, 'drinks')" id="defaultOpen" >Drinks</button>
+
+                <button class="tab-button" onclick="openMenu(event, 'food')">Food</button>
+            </div>
+            
+            <div id="drinks" class="tabcontent">
+                <h2>Drinks</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequuntur, maxime, reprehenderit nemo asperiores voluptas quae, dignissimos nostrum nesciunt provident ad a id error reiciendis atque officiis quisquam nulla excepturi!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla est aut quaerat autem repellendus, blanditiis praesentium mollitia reiciendis. Alias provident labore officia id impedit veritatis culpa dicta, facere eius deserunt.</p>
+            </div>
+
+            <div id="food" class="tabcontent">
+                <h2>Food</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium cupiditate, cumque quidem tenetur maiores doloribus pariatur, ullam neque cum dolorum, officiis nostrum quae sunt velit doloremque officia beatae nam laboriosam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestiae cupiditate dignissimos laboriosam obcaecati libero consectetur, optio in fugit voluptatibus praesentium doloremque alias nostrum corporis illum nisi. Commodi, nulla pariatur.</p>
+            </div>
+
+            <script rel="javascript" src ="index.js"></script>
+        </main>
+
+
+<footer>
+    <h2>Contact Info:</h2>
+    <p>Adress: Orcroad 55 <br>
+        6666 GONDOR <br>
+        Email: GaryTheOrc@outlook.com <br>
+        Tlf: 555 46 433
+    </p>
+    <h4 class="apply-now">Wanna join our team?</h4>
+            <a class= "apply-button" href="apply.html">Apply now!</a> 
+</footer>
+    
+</body>
+</html>

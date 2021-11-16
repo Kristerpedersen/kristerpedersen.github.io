@@ -1,0 +1,305 @@
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    margin:0;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 1px;
+}
+
+.current-page {
+    border-bottom: #FFAE38 solid 1px;
+}
+
+/* typography */
+
+
+h1 {
+    font-family: 'Grenze Gotisch', cursive;
+    margin: 0;
+    
+}
+
+
+.tavern-title {
+    color:#FFAE38;
+    text-align: center;
+    font-size: 1.75rem;
+    border-bottom: #FFAE38 solid 1px;
+    padding-bottom: 1em;
+}
+
+.subtitle {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+
+}
+
+
+
+.main-text-body {
+    color:white;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: .5em;
+}
+
+.apply-now {
+    color: white;
+    text-align: center ;
+    margin: 1em 0;
+
+    
+}
+
+@media screen and (min-width: 900px) {
+    .main-text-body {
+        font-size: 2.5rem;
+    }
+    
+}
+
+
+/* Navigation */
+
+nav ul {
+list-style: none;
+padding:0;
+display: flex;
+flex-direction: column;
+text-align: center;
+font-weight: 700;
+font-size: 1.9rem;
+letter-spacing: 1px;
+margin: 0;
+
+}
+nav li {
+    margin-top: .5em;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #FFAE38;
+}
+
+nav a:hover,
+nav a:focus {
+    color:yellow;
+}
+
+@media screen and (min-width: 900px) {
+    nav ul {
+        flex-direction: row;
+        align-content: center;
+
+    }
+
+    nav {
+        padding: 2.3em 0;
+        margin-right: 6em;
+    }
+
+
+    nav li {
+        margin-left: 1em;
+    }
+
+
+}
+
+/* Layout */
+
+header {
+    background-color: #2F0F00;
+    width: 100%;
+
+}
+
+@media screen and (min-width: 900px) {
+
+header {
+    min-width: 61.5em;
+    position:fixed;
+}
+
+}
+
+
+main {
+    background-image: url(../images/tavern.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height:1.5;
+
+}
+
+.our-staff-main {
+    padding-top: 6em;   
+}
+
+
+.menu-button {
+    width: 15%;
+    min-width: 13em;
+    background-color: #2F0F00;
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.menu-tab {
+    overflow: hidden;
+    border: solid 1px #200b00;
+    background-color: #4F1F00;
+    color:#FFAE38;
+}
+
+.tab-button {
+    background-color: inherit;
+    float:left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .95em 1em;
+    transition: 0.3s;
+    color:#FFAE38;
+    font-size: 1.2rem;
+}
+
+.tab-button:hover,
+.tab-button:active,
+.tab-button:focus {
+    background-color: #200b00;
+    color: yellow
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #200b00;
+    border-top: none;
+    background-color: #2F0F00;
+    color: #FFAE38;
+    width: 75%;
+
+}
+
+.info-box {
+    background-color: #2F0F00;
+    color:#FFAE38;
+    width: 75%;
+    padding: 1em;
+    margin-top: 3em;
+}
+
+
+.apply-button {
+    border: none;
+    color: #FFAE38;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Crimson Text', serif;
+
+}
+
+
+.apply-button,
+.apply-button:visited {
+    text-decoration: none;
+    color: #FFAE38;
+}
+
+.apply-button:hover {
+    color: yellow;
+}
+
+/* Form layout */
+
+.message {
+    width: 24em; 
+    height: 12em;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    background-color: #2F0F00;
+    width: 35%;
+    margin-top: 3em;
+    padding: 1em;
+
+}
+
+.menu {
+    background-color: #2F0F00;
+    color: #FFAE38;
+    max-width: 30em;
+    padding: 2em 6em;
+}
+
+#menu-button-text {
+    color:#FFAE38;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+
+}
+
+.menu-button:hover,
+.menu-button:focus {
+    color:yellow;
+    background-color: #882b00;
+    cursor: pointer;
+}
+
+
+footer {
+    background-image: url(../images/kegs\ 2.jpg);   
+    text-align: center;
+    color: #ffaE38;
+    padding: 1em;
+}
+footer p {
+    margin: 0;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column
+}
+
+@media screen and (min-width: 900px) {
+
+    .container-flex {
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    
+    .tavern-title {
+        margin-left: 2em;
+        border-bottom: none;
+    }
+
+    #menu-button-text {
+        font-size: 1.6rem;
+    }
+
+
+    
+
+
+}
